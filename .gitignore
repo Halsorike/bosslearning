@@ -23,6 +23,7 @@ Homestead.json
 .phpunit.result.cache
 /.idea/*
 /storage/installed
+/storage/
 
 #/.phpstorm.meta.php
 #/_ide_helper.php
@@ -31,4 +32,5 @@ Homestead.json
 /qodana.yaml
 
 
-.cursor/rules/my-laravel-rules.mdcBoss_School_Final.zip
+.cursor/rules/my-laravel-rules.mdc
+Boss_School_Final.zip
