@@ -10,7 +10,7 @@
 
 
     <application
-        android:label="Boss School"
+        android:label="Boss Learning"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher"
         android:usesCleartextTraffic="true"

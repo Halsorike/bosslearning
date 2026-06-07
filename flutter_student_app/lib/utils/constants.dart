@@ -6,8 +6,8 @@ import 'package:eschool/utils/labelKeys.dart';
 
 const String baseUrl = kIsWeb ? "http://127.0.0.1:8000" : "http://10.0.2.2:8000";
 
-//TEST: https://eschoolsaas.thewrteam.in
-//Producttion : https://eschool-saas.wrteam.me
+// TEST: Add your test host here if needed, or remove this comment
+// PRODUCTION: Add your production host here if needed, or remove this comment
 const String databaseUrl = "$baseUrl/api/";
 
 // our Socket url

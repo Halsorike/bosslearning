@@ -25,7 +25,7 @@
     </queries>
 
     <application
-        android:label="Boss School Staff"
+        android:label="Boss Learning Staff"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

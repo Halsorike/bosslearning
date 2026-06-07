@@ -4,19 +4,19 @@
     <style>
         :root {
             --primary-color:
-                {{ $settings['theme_primary_color'] ?? '#56cc99' }}
+                {{ $settings['theme_primary_color'] ?? '#1A5E35' }}
             ;
             --secondary-color:
-                {{ $settings['theme_secondary_color'] ?? '#215679' }}
+                {{ $settings['theme_secondary_color'] ?? '#2B904F' }}
             ;
             --secondary-color1:
-                {{ $settings['theme_secondary_color_1'] ?? '#38a3a5' }}
+                {{ $settings['theme_secondary_color_1'] ?? '#81C341' }}
             ;
             --primary-background-color:
-                {{ $settings['theme_primary_background_color'] ?? '#f2f5f7' }}
+                {{ $settings['theme_primary_background_color'] ?? '#F4F9F5' }}
             ;
             --text--secondary-color:
-                {{ $settings['theme_text_secondary_color'] ?? '#5c788c' }}
+                {{ $settings['theme_text_secondary_color'] ?? '#121E15' }}
             ;
 
         }
@@ -205,7 +205,7 @@
                         <div class="row">
                             <div class="col-md-12 col-lg-6">
                                 <div class="flex_column_start">
-                                    <span class="commonTitle">{{ $settings['system_name'] ?? 'Boss School' }}</span>
+                                    <span class="commonTitle">{{ $settings['system_name'] ?? 'Boss Learning' }}</span>
                                     <span class="commonDesc">
                                         {{ $settings['tag_line'] }}
                                     </span>

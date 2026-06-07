@@ -428,7 +428,7 @@
                                         "amount": $('.bill_amount').val() *
                                         100, // Amount is in currency subunits. Default currency is INR. Hence, 100 refers to 1 INR
                                         "currency": "{{ $system_settings['currency_code'] ?? 'INR' }}",
-                                        "name": "{{ $system_settings['system_name'] ?? 'Boss School' }}",
+                                        "name": "{{ $system_settings['system_name'] ?? 'Boss Learning' }}",
                                         "description": "Razorpay",
                                         "order_id": order_id,
                                         "handler": function(response) {

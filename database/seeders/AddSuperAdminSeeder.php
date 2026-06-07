@@ -51,18 +51,18 @@ class AddSuperAdminSeeder extends Seeder {
             ["name" => "currency_code", "data" => "USD", "type" => "string"],
             ["name" => "currency_symbol", "data" => "$", "type" => "string"],
             ["name" => "additional_billing_days", "data" => "5", "type" => "integer"],
-            ["name" => "system_name", "data" => "Boss School", "type" => "string"],
+            ["name" => "system_name", "data" => "Boss Learning", "type" => "string"],
             ["name" => "address", "data" => "#262-263, Time Square Empire, SH 42 Mirjapar highway, Bhuj - Kutch 370001 Gujarat India.", "type" => "string"],
             ["name" => "billing_cycle_in_days", "data" => "30", "type" => "integer"],
             ["name" => "current_plan_expiry_warning_days", "data" => "7", "type" => "integer"],
             ["name" => "front_site_theme_color", "data" => "#e9f9f3", "type" => "text"],
-            ["name" => "primary_color", "data" => "#3ccb9b", "type" => "text"],
-            ["name" => "secondary_color", "data" => "#245a7f", "type" => "text"],
-            ["name" => "short_description", "data" => "Boss School - Manage Your School", "type" => "text"],
+            ["name" => "primary_color", "data" => "#1A5E35", "type" => "text"],
+            ["name" => "secondary_color", "data" => "#2B904F", "type" => "text"],
+            ["name" => "short_description", "data" => "Boss Learning - Manage Your School", "type" => "text"],
             ["name" => "facebook", "data" => "", "type" => "text"],
             ["name" => "instagram", "data" => "", "type" => "text"],
             ["name" => "linkedin", "data" => "", "type" => "text"],
-            ["name" => "footer_text", "data" => "<p>&copy;&nbsp;<strong>Boss School</strong>. All Rights Reserved</p>", "type" => "text"],
+            ["name" => "footer_text", "data" => "<p>&copy;&nbsp;<strong>Boss Learning</strong>. All Rights Reserved</p>", "type" => "text"],
             ["name" => "tagline", "data" => "We Provide the best Education", "type" => "text"],
             ["name" => "super_admin_name", "data" => "Super Admin", "type" => "text"],
             ["name" => "database_root_user", "data" => 0, "type" => "integer"],
@@ -76,7 +76,7 @@ class AddSuperAdminSeeder extends Seeder {
         $systemSettings = [
             [
                 'name' => 'hero_title_1',
-                'data' => 'Opt for Boss School 14+ robust features for an enhanced educational experience.',
+                'data' => 'Opt for Boss Learning 14+ robust features for an enhanced educational experience.',
                 'type' => 'text'
             ],
             [
@@ -96,7 +96,7 @@ class AddSuperAdminSeeder extends Seeder {
             ],
             [
                 'name' => 'about_us_description',
-                'data' => 'Boss School is the pinnacle of school management, offering advanced technology, user-friendly features, and personalized solutions. It simplifies communication, streamlines administrative tasks, and elevates the educational experience for all stakeholders. With Boss School, excellence in education management is guaranteed.',
+                'data' => 'Boss Learning is the pinnacle of school management, offering advanced technology, user-friendly features, and personalized solutions. It simplifies communication, streamlines administrative tasks, and elevates the educational experience for all stakeholders. With Boss Learning, excellence in education management is guaranteed.',
                 'type' => 'text'
             ],
             [
@@ -121,32 +121,32 @@ class AddSuperAdminSeeder extends Seeder {
             ],
             [
                 'name' => 'theme_primary_color',
-                'data' => '#56cc99',
+                'data' => '#1A5E35',
                 'type' => 'text'
             ],
             [
                 'name' => 'theme_secondary_color',
-                'data' => '#215679',
+                'data' => '#2B904F',
                 'type' => 'text'
             ],
             [
                 'name' => 'theme_secondary_color_1',
-                'data' => '#38a3a5',
+                'data' => '#81C341',
                 'type' => 'text'
             ],
             [
                 'name' => 'theme_primary_background_color',
-                'data' => '#f2f5f7',
+                'data' => '#F4F9F5',
                 'type' => 'text'
             ],
             [
                 'name' => 'theme_text_secondary_color',
-                'data' => '#5c788c',
+                'data' => '#121E15',
                 'type' => 'text'
             ],
             [
                 'name' => 'tag_line',
-                'data' => 'Transform School Management With Boss School',
+                'data' => 'Transform School Management With Boss Learning',
                 'type' => 'text'
             ],
             [
@@ -156,7 +156,7 @@ class AddSuperAdminSeeder extends Seeder {
             ],
             [
                 'name' => 'hero_description',
-                'data' => 'Experience the future of education with our Boss School platform. Streamline attendance, assignments, exams, and more. Elevate your school\'s efficiency and engagement.',
+                'data' => 'Experience the future of education with our Boss Learning platform. Streamline attendance, assignments, exams, and more. Elevate your school\'s efficiency and engagement.',
                 'type' => 'text'
             ],
             [

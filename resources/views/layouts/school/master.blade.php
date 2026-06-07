@@ -25,7 +25,7 @@
     <title>
         @yield('title') || 
         {{-- {{ config('app.name') }} --}}
-        {{ $schoolSettings['school_name'] ?? 'Boss School' }}
+        {{ $schoolSettings['school_name'] ?? 'Boss Learning' }}
     </title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     @include('layouts.school.include')

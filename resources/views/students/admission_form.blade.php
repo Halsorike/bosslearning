@@ -109,7 +109,7 @@
         <div class="header">
             <table class="full-table-width school-info">
                 <tr>
-                    <th class="text-left school-name">{{ $schoolSettings['school_name'] ?? 'Boss School' }}</th>
+                    <th class="text-left school-name">{{ $schoolSettings['school_name'] ?? 'Boss Learning' }}</th>
                     <th class="text-right" rowspan="3">
                         @if ($settings['horizontal_logo'] ?? '')
                             <img height="50" src="{{ public_path('storage/') . $settings['horizontal_logo'] }}" alt="">

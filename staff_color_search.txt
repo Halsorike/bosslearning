@@ -1,0 +1,98 @@
+flutter_staff_app/lib/cubits/transport/transportDashboardCubit.dart:108:          'background': const Color(0xFFDFF6E2),
+flutter_staff_app/lib/cubits/transport/transportDashboardCubit.dart:109:          'foreground': const Color(0xFF37C748),
+flutter_staff_app/lib/cubits/transport/transportDashboardCubit.dart:114:          'background': const Color(0xFFFFE8E8),
+flutter_staff_app/lib/cubits/transport/transportDashboardCubit.dart:115:          'foreground': const Color(0xFFE53935),
+flutter_staff_app/lib/cubits/transport/transportDashboardCubit.dart:120:          'background': const Color(0xFFF5F5F5),
+flutter_staff_app/lib/cubits/transport/transportDashboardCubit.dart:121:          'foreground': const Color(0xFF9E9E9E),
+flutter_staff_app/lib/cubits/transport/transportDashboardCubit.dart:126:          'background': const Color(0xFFE0EDF6),
+flutter_staff_app/lib/cubits/transport/transportDashboardCubit.dart:127:          'foreground': const Color(0xFF29638A),
+flutter_staff_app/lib/cubits/transport/transportDashboardCubit.dart:141:          'background': const Color(0xFFDFF6E2),
+flutter_staff_app/lib/cubits/transport/transportDashboardCubit.dart:142:          'foreground': const Color(0xFF37C748),
+flutter_staff_app/lib/cubits/transport/transportDashboardCubit.dart:147:          'background': const Color(0xFFFFE8E8),
+flutter_staff_app/lib/cubits/transport/transportDashboardCubit.dart:148:          'foreground': const Color(0xFFE53935),
+flutter_staff_app/lib/cubits/transport/transportDashboardCubit.dart:153:          'background': const Color(0xFFE0EDF6),
+flutter_staff_app/lib/cubits/transport/transportDashboardCubit.dart:154:          'foreground': const Color(0xFF29638A),
+flutter_staff_app/lib/cubits/transport/transportDashboardCubit.dart:159:          'background': const Color(0xFFF5F5F5),
+flutter_staff_app/lib/cubits/transport/transportDashboardCubit.dart:160:          'foreground': const Color(0xFF9E9E9E),
+flutter_staff_app/lib/ui/screens/onbordingScreen.dart:70:                      color: Color(0xff22577a),
+flutter_staff_app/lib/ui/screens/onbordingScreen.dart:119:                      color: Color(0xff22577a),
+flutter_staff_app/lib/ui/screens/home/widgets/driverHomeContainer/widgets/driverNewStudentContainer.dart:101:                        color: const Color(0xFFE3F2FD), // Light blue background
+flutter_staff_app/lib/ui/screens/home/widgets/driverHomeContainer/widgets/driverNewStudentContainer.dart:122:                        color: const Color(0xFFE3F2FD), // Light blue background
+flutter_staff_app/lib/ui/screens/home/widgets/driverHomeContainer/widgets/driverAlertNotesContainer.dart:57:        backgroundColor = const Color(0xFFE7F3FF); // Light blue background
+flutter_staff_app/lib/ui/screens/home/widgets/driverHomeContainer/widgets/driverAlertNotesContainer.dart:58:        textColor = const Color(0xFF1565C0); // Dark blue text
+flutter_staff_app/lib/ui/screens/home/widgets/driverHomeContainer/widgets/driverAlertNotesContainer.dart:61:        backgroundColor = const Color(0xFFFFEBEE); // Light pink background
+flutter_staff_app/lib/ui/screens/home/widgets/driverHomeContainer/widgets/driverAlertNotesContainer.dart:62:        textColor = const Color(0xFFC62828); // Dark red text
+flutter_staff_app/lib/ui/screens/home/widgets/driverHomeContainer/widgets/driverAlertNotesContainer.dart:65:        backgroundColor = const Color(0xFFF1F8E9); // Light green background
+flutter_staff_app/lib/ui/screens/home/widgets/driverHomeContainer/widgets/driverAlertNotesContainer.dart:66:        textColor = const Color(0xFF2E7D32); // Dark green text
+flutter_staff_app/lib/ui/screens/home/widgets/driverHomeContainer/widgets/driverLeavesContainer.dart:298:                  isFullDay ? const Color(0xFFFFEBEE) : const Color(0xFFFFF3E0),
+flutter_staff_app/lib/ui/screens/home/widgets/driverHomeContainer/widgets/driverLeavesContainer.dart:307:                    ? const Color(0xFFEF4444)
+flutter_staff_app/lib/ui/screens/home/widgets/driverHomeContainer/widgets/driverLeavesContainer.dart:308:                    : const Color(0xFFFF9800),
+flutter_staff_app/lib/ui/screens/home/widgets/driverHomeContainer/widgets/driverLeavesContainer.dart:348:                      ? const Color(0xFFEF4444)
+flutter_staff_app/lib/ui/screens/home/widgets/chatContainer/newChatContactsScreen.dart:671:          bottom: BorderSide(color: Color(0xFFEBEEF3)),
+flutter_staff_app/lib/ui/screens/home/widgets/chatContainer/widgets/chatContactCard.dart:31:              bottom: BorderSide(color: Color(0xFFEBEEF3)),
+flutter_staff_app/lib/ui/screens/tripDetailsScreen/widgets/tripTimeline.dart:191:            colorFilter: const ColorFilter.mode(
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/attendanceScreen.dart:412:              color: const Color(0xFFE9EDF3),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/attendanceScreen.dart:510:            const Color(0xFFE8F5E8); // Light green background like in image
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/attendanceScreen.dart:511:        textColor = const Color(0xFF2E7D32); // Dark green text
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/attendanceScreen.dart:515:        bgColor = const Color(0xFFFFEBEE); // Light red background like in image
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/attendanceScreen.dart:516:        textColor = const Color(0xFFC62828); // Dark red text
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/attendanceScreen.dart:520:        bgColor = const Color(0xFFF5F5F5); // Light grey background
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/attendanceScreen.dart:521:        textColor = const Color(0xFF757575); // Dark grey text
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/busRouteScreen.dart:53:        color: const Color(0xFFE0F5EC),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/busRouteScreen.dart:55:        border: Border.all(color: const Color(0xFF57CC99)),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/busRouteScreen.dart:116:                                ? const Color(0xFF57CC99)
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/busRouteScreen.dart:130:                              ? const Color(0xFF57CC99)
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/busRouteScreen.dart:253:                color: Color(0xFF212121),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/busRouteScreen.dart:265:              color: Color(0xFF212121),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/busRouteScreen.dart:290:      ..color = const Color(0xFFEBEEF3)
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/busRouteScreen.dart:309:        ..color = isCurrent ? const Color(0xFF57CC99) : const Color(0xFFEBEEF3);
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/transportRequestDetailsScreen.dart:171:          style: const TextStyle(fontSize: 12, color: Color(0xFF6D6E6F)),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/routeStopRow.dart:16:        ? const Color(0xFF57CC99)
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/liveRouteBottomSheet.dart:269:        color: const Color(0xFFE3F2FD),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/liveRouteBottomSheet.dart:295:                    color: Color(0xFF424242),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/attendanceStudentRow.dart:60:            activeTrackColor: const Color(0xFF4CAF50),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/liveTimeline.dart:166:            colorFilter: const ColorFilter.mode(
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/transportPlanCard.dart:22:        Color statusBackground = const Color(0xFFE8F5E8);
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/transportPlanCard.dart:23:        Color statusForeground = const Color(0xFF2E7D32);
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/transportPlanCard.dart:27:          statusBackground = const Color(0xFFFFF3E0);
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/transportPlanCard.dart:28:          statusForeground = const Color(0xFFE65100);
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/pickupTimeRow.dart:37:              color: Color(0xFF1F4B63),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/pickupTimeRow.dart:46:                    const ColorFilter.mode(Colors.white, BlendMode.srcIn),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/commonTransportWidgets.dart:111:            style: const TextStyle(color: Color(0xFF6D6E6F), fontSize: 12),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/commonTransportWidgets.dart:117:              color: const Color(0xFF1A1C1D),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/commonTransportWidgets.dart:194:                        color: Color(0xFF6D6E6F), fontSize: 12)),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/commonTransportWidgets.dart:208:                      color: Color(0xFF6D6E6F),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/commonTransportWidgets.dart:219:                  icon: Icons.phone, pillColor: Color(0xFFF7F9FF)),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/commonTransportWidgets.dart:226:                icon: Icons.message, pillColor: Color(0xFFF7F9FF)),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/commonTransportWidgets.dart:305:          color: const Color(0xFFE6F0FA),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/commonTransportWidgets.dart:309:          style: const TextStyle(color: Color(0xFF29638A), fontSize: 12)),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/commonTransportWidgets.dart:320:        _TimelineCircle(color: Color(0xFF61C29F), diameter: 14),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/commonTransportWidgets.dart:324:            color: Color(0xFF61C29F),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/commonTransportWidgets.dart:329:        _DiamondMarker(size: 12, color: Color(0xFF61C29F)),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/commonTransportWidgets.dart:451:              background: const Color(0xFFF5F5F5),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/commonTransportWidgets.dart:452:              foreground: const Color(0xFF9E9E9E),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/commonTransportWidgets.dart:468:              background: const Color(0xFFF5F5F5),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/commonTransportWidgets.dart:469:              foreground: const Color(0xFF9E9E9E),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/commonTransportWidgets.dart:491:                            const Color(0xFF29638A).withValues(alpha: 0.15)),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/commonTransportWidgets.dart:510:            background: statusStyle['background'] ?? const Color(0xFFF5F5F5),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/commonTransportWidgets.dart:511:            foreground: statusStyle['foreground'] ?? const Color(0xFF9E9E9E),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/commonTransportWidgets.dart:537:                            const Color(0xFF29638A).withValues(alpha: 0.15)),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/attendanceStatusPill.dart:11:        present ? const Color(0xFFE6F4EA) : const Color(0xFFFFE3E3);
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/attendanceStatusPill.dart:13:        present ? const Color(0xFF4CAF50) : const Color(0xFFF44336);
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/attendanceTable.dart:24:              color: const Color(0xFFE9EDF3),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/liveTrackingCard.dart:75:        bgColor = const Color(0xFFE8F5E8);
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/liveTrackingCard.dart:76:        textColor = const Color(0xFF2E7D32);
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/liveTrackingCard.dart:80:        bgColor = const Color(0xFFFFEBEE);
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/liveTrackingCard.dart:81:        textColor = const Color(0xFFC62828);
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/liveTrackingCard.dart:85:        bgColor = const Color(0xFFE3F2FD);
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/liveTrackingCard.dart:86:        textColor = const Color(0xFF1976D2);
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/liveTrackingCard.dart:90:        bgColor = const Color(0xFFE8F5E8);
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/liveTrackingCard.dart:91:        textColor = const Color(0xFF2E7D32);
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/transportRequest.dart:168:          'background': const Color(0xFFE8F5E8),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/transportRequest.dart:169:          'foreground': const Color(0xFF2E7D32),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/transportRequest.dart:173:          'background': const Color(0xFFF9D2D2),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/transportRequest.dart:174:          'foreground': const Color(0xFFB71C1C),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/transportRequest.dart:178:          'background': const Color(0xFFFEEED7),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/transportRequest.dart:179:          'foreground': const Color(0xFF9E6C2C),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/transportRequest.dart:183:          'background': const Color(0xFFF5F5F5),
+flutter_staff_app/lib/ui/screens/staffTransportEnroll/transportHome/widgets/transportRequest.dart:184:          'foreground': const Color(0xFF9E9E9E),

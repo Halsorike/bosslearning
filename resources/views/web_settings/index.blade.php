@@ -336,26 +336,26 @@
     <script>
         function restore_default_color(value)
         {
-            if (value == 1) {
-                $('#theme_primary_color').val('#56CC99');
-                $('.theme_primary_color').asColorPicker('val', '#56CC99');
+                if (value == 1) {
+                $('#theme_primary_color').val('#1A5E35');
+                $('.theme_primary_color').asColorPicker('val', '#1A5E35');
             }
 
             if (value == 2) {
-                $('#theme_secondary_color').val('#215679');
-                $('.theme_secondary_color').asColorPicker('val', '#215679');
+                $('#theme_secondary_color').val('#2B904F');
+                $('.theme_secondary_color').asColorPicker('val', '#2B904F');
             }
             if (value == 3) {
-                $('#theme_secondary_color_1').val('#38A3A5');
-                $('.theme_secondary_color_1').asColorPicker('val', '#38A3A5');
+                $('#theme_secondary_color_1').val('#81C341');
+                $('.theme_secondary_color_1').asColorPicker('val', '#81C341');
             }
             if (value == 4) {
-                $('#theme_primary_background_color').val('#F2F5F7');
-                $('.theme_primary_background_color').asColorPicker('val', '#F2F5F7');
+                $('#theme_primary_background_color').val('#F4F9F5');
+                $('.theme_primary_background_color').asColorPicker('val', '#F4F9F5');
             }
             if (value == 5) {
-                $('#theme_text_secondary_color').val('#5C788C');
-                $('.theme_text_secondary_color').asColorPicker('val', '#5C788C');
+                $('#theme_text_secondary_color').val('#121E15');
+                $('.theme_text_secondary_color').asColorPicker('val', '#121E15');
             }
             
         }

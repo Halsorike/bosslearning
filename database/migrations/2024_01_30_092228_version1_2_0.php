@@ -131,7 +131,7 @@ return new class extends Migration {
         $systemSettings = [
             [
                 'name' => 'hero_title_1',
-                'data' => 'Opt for eSchool Saas 14+ robust features for an enhanced educational experience.',
+                'data' => 'Opt for Boss Learning 14+ robust features for an enhanced educational experience.',
                 'type' => 'text'
             ],
             [
@@ -151,7 +151,7 @@ return new class extends Migration {
             ],
             [
                 'name' => 'about_us_description',
-                'data' => 'eSchool is the pinnacle of school management, offering advanced technology, user-friendly features, and personalized solutions. It simplifies communication, streamlines administrative tasks, and elevates the educational experience for all stakeholders. With eSchool, excellence in education management is guaranteed.',
+                'data' => 'Boss Learning is the pinnacle of school management, offering advanced technology, user-friendly features, and personalized solutions. It simplifies communication, streamlines administrative tasks, and elevates the educational experience for all stakeholders. With Boss Learning, excellence in education management is guaranteed.',
                 'type' => 'text'
             ],
             [
@@ -176,32 +176,32 @@ return new class extends Migration {
             ],
             [
                 'name' => 'theme_primary_color',
-                'data' => '#56cc99',
+                'data' => '#1A5E35',
                 'type' => 'text'
             ],
             [
                 'name' => 'theme_secondary_color',
-                'data' => '#215679',
+                'data' => '#2B904F',
                 'type' => 'text'
             ],
             [
                 'name' => 'theme_secondary_color_1',
-                'data' => '#38a3a5',
+                'data' => '#81C341',
                 'type' => 'text'
             ],
             [
                 'name' => 'theme_primary_background_color',
-                'data' => '#f2f5f7',
+                'data' => '#F4F9F5',
                 'type' => 'text'
             ],
             [
                 'name' => 'theme_text_secondary_color',
-                'data' => '#5c788c',
+                'data' => '#121E15',
                 'type' => 'text'
             ],
             [
                 'name' => 'tag_line',
-                'data' => 'Transform School Management With eSchool SaaS',
+                'data' => 'Transform School Management With Boss Learning',
                 'type' => 'text'
             ],
             [
@@ -211,7 +211,7 @@ return new class extends Migration {
             ],
             [
                 'name' => 'hero_description',
-                'data' => 'Experience the future of education with our eSchool SaaS platform. Streamline attendance, assignments, exams, and more. Elevate your school\'s efficiency and engagement.',
+                'data' => 'Experience the future of education with our Boss Learning platform. Streamline attendance, assignments, exams, and more. Elevate your school\'s efficiency and engagement.',
                 'type' => 'text'
             ],
         ];

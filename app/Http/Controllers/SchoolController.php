@@ -311,7 +311,7 @@ class SchoolController extends Controller
             '{super_admin_name}' => $settings['super_admin_name'] ?? 'Super Admin',
             '{support_email}' => $settings['mail_username'] ?? '',
             '{contact}' => $settings['mobile'] ?? '',
-            '{system_name}' => $settings['system_name'] ?? 'eSchool Saas',
+            '{system_name}' => $settings['system_name'] ?? 'Boss Learning',
             '{url}' => url('/'),
             // Add more placeholders as needed
         ];
@@ -733,7 +733,7 @@ class SchoolController extends Controller
                 $email_body = $this->replacePlaceholders($request, $users->user, $settings, $users->code);
 
                 $data = [
-                    'subject' => 'Welcome to ' . $settings['system_name'] ?? 'eSchool Saas',
+                    'subject' => 'Welcome to ' . ($settings['system_name'] ?? 'Boss Learning'),
                     'email' => $request->edit_admin_email,
                     'email_body' => $email_body
                 ];
@@ -1158,7 +1158,7 @@ class SchoolController extends Controller
                 '{school_admin_email}' => $school->user->email,
                 '{code}' => $school->code,
                 '{school_admin_mobile}' => $school->user->mobile,
-                '{system_name}' => $systemSettings['system_name'] ?? 'eSchool-SaaS',
+                '{system_name}' => $systemSettings['system_name'] ?? 'Boss Learning',
                 '{support_email}' => $systemSettings['mail_send_from'] ?? 'example@gmail.com',
                 '{support_contact}' => $systemSettings['mobile'] ?? '[+xx xxxxxxxxxx]',
                 '{website}' => url('/'),
@@ -1472,8 +1472,7 @@ class SchoolController extends Controller
                 $email_body = $this->replaceEmailPlaceholders($request, $settings);
 
                 $data = [
-                    'subject' => 'Welcome to ' . $settings['system_name'] ?? 'eSchool Saas',
-                    'email' => $request->school_support_email,
+                'subject' => 'Welcome to ' . ($settings['system_name'] ?? 'Boss Learning'),
                     'email_body' => $email_body
                 ];
 
@@ -1514,7 +1513,7 @@ class SchoolController extends Controller
             '{super_admin_name}' => $settings['super_admin_name'] ?? 'Super Admin',
             '{support_email}' => $settings['mail_username'] ?? '',
             '{contact}' => $settings['mobile'] ?? '',
-            '{system_name}' => $settings['system_name'] ?? 'eSchool Saas',
+            '{system_name}' => $settings['system_name'] ?? 'Boss Learning',
             '{url}' => url('/'),
         ];
 
@@ -1543,7 +1542,7 @@ class SchoolController extends Controller
         $templateContent = $settings['school_inquiry_template'] ?? '';
 
         $placeholders = [
-            '{system_name}' => $settings['system_name'] ?? 'eSchool Saas Support Team',
+            '{system_name}' => $settings['system_name'] ?? 'Boss Learning Support Team',
             '{school_name}' => $request->school_name,
             '{school_email}' => $request->school_support_email,
             '{contact}' => $request->school_support_phone,
