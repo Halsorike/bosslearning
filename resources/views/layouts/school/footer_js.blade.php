@@ -88,8 +88,13 @@
             nav: true,
             rtl: {{ $lang->is_rtl ? 'true' : 'false' }},
             navText: [
-                "<i class='fa-solid fa-arrow-left'></i>",
-                "<i class='fa-solid fa-arrow-right'></i>",
+                @if($lang && $lang->is_rtl)
+                    "<i class='fa-solid fa-arrow-right'></i>",
+                    "<i class='fa-solid fa-arrow-left'></i>"
+                @else
+                    "<i class='fa-solid fa-arrow-left'></i>",
+                    "<i class='fa-solid fa-arrow-right'></i>"
+                @endif
             ],
         });
     });

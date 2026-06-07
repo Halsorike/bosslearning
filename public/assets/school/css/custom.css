@@ -153,7 +153,55 @@ ul {
     max-height: 80vh;
     border: none;
 }
-
 footer .copyRightText span p {
     margin-bottom: 0rem !important;
 }
+
+/* School Website RTL Custom Overrides */
+html[dir="rtl"] body,
+[dir="rtl"] {
+    font-family: 'Tajawal', sans-serif !important;
+}
+
+[dir="rtl"] .commonTag {
+    padding-left: 8px !important;
+    padding-right: 12px !important;
+}
+
+[dir="rtl"] .commonTag::before {
+    left: auto !important;
+    right: 0px !important;
+}
+
+[dir="rtl"] .topHeader .leftDiv span:first-child {
+    border-right: 0px solid transparent !important;
+    border-left: 1px solid #29363f !important;
+    padding-right: 0px !important;
+    padding-left: 12px !important;
+}
+
+[dir="rtl"] .events .eventsCardWrapper .eventDateWrapper {
+    border-radius: 0px 4px 4px 0px !important;
+}
+
+/* Slide arrows positioning fix in RTL */
+[dir="rtl"] .events .eventsCardWrapper .card .rightArr {
+    right: auto !important;
+    left: 14px !important;
+}
+
+/* Mirror FontAwesome next/prev chevrons/carets on the school website */
+[dir="rtl"] .fa-caret-right,
+[dir="rtl"] .fa-chevron-right,
+[dir="rtl"] .fa-angle-right,
+[dir="rtl"] .fa-arrow-right {
+    transform: scaleX(-1);
+    display: inline-block;
+}
+[dir="rtl"] .fa-caret-left,
+[dir="rtl"] .fa-chevron-left,
+[dir="rtl"] .fa-angle-left,
+[dir="rtl"] .fa-arrow-left {
+    transform: scaleX(-1);
+    display: inline-block;
+}

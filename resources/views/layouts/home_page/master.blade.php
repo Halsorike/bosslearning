@@ -2,18 +2,12 @@
 @php
     $lang = Session::get('language');
 @endphp
-@if ($lang)
-    @if ($lang->is_rtl)
-        <html lang="en" dir="rtl">
-            <link href="{{ asset('assets/home_page/css/style-rtl.css') }}" rel="stylesheet">
-    @else
-        <html lang="en">
-    @endif
-@else
-    <html lang="en">
-@endif
+<html lang="{{ $lang->code ?? 'en' }}" dir="{{ $lang && $lang->is_rtl ? 'rtl' : 'ltr' }}">
 
 <head>
+    @if ($lang && $lang->is_rtl)
+        <link href="{{ asset('assets/home_page/css/style-rtl.css') }}" rel="stylesheet">
+    @endif
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta property="og:title" content="{{ $systemSettings['system_name'] ?? 'Boss Learning' }}">

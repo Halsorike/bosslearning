@@ -256,6 +256,10 @@ input:checked+.feature-list, .feature-list-default {
     right: -4rem !important;
 } */
 
+.action-column-dropdown-menu {
+    left: auto !important;
+}
+
 /* Small devices (phones in landscape mode and larger, 576px and up) */
 @media (min-width: 576px) {
     .action-column-dropdown-menu {
@@ -283,3 +287,95 @@ input:checked+.feature-list, .feature-list-default {
         right: -6rem !important;
     }
 }
+
+/* RTL Spacing & Layout Utility Overrides */
+.rtl .ml-1, .rtl .mx-1 { margin-left: unset !important; margin-right: 0.25rem !important; }
+.rtl .mr-1, .rtl .mx-1 { margin-right: unset !important; margin-left: 0.25rem !important; }
+.rtl .ml-2, .rtl .mx-2 { margin-left: unset !important; margin-right: 0.5rem !important; }
+.rtl .mr-2, .rtl .mx-2 { margin-right: unset !important; margin-left: 0.5rem !important; }
+.rtl .ml-3, .rtl .mx-3 { margin-left: unset !important; margin-right: 1rem !important; }
+.rtl .mr-3, .rtl .mx-3 { margin-right: unset !important; margin-left: 1rem !important; }
+.rtl .ml-4, .rtl .mx-4 { margin-left: unset !important; margin-right: 1.5rem !important; }
+.rtl .mr-4, .rtl .mx-4 { margin-right: unset !important; margin-left: 1.5rem !important; }
+.rtl .ml-5, .rtl .mx-5 { margin-left: unset !important; margin-right: 3rem !important; }
+.rtl .mr-5, .rtl .mx-5 { margin-right: unset !important; margin-left: 3rem !important; }
+
+.rtl .pl-1, .rtl .px-1 { padding-left: unset !important; padding-right: 0.25rem !important; }
+.rtl .pr-1, .rtl .px-1 { padding-right: unset !important; padding-left: 0.25rem !important; }
+.rtl .pl-2, .rtl .px-2 { padding-left: unset !important; padding-right: 0.5rem !important; }
+.rtl .pr-2, .rtl .px-2 { padding-right: unset !important; padding-left: 0.5rem !important; }
+.rtl .pl-3, .rtl .px-3 { padding-left: unset !important; padding-right: 1rem !important; }
+.rtl .pr-3, .rtl .px-3 { padding-right: unset !important; padding-left: 1rem !important; }
+.rtl .pl-4, .rtl .px-4 { padding-left: unset !important; padding-right: 1.5rem !important; }
+.rtl .pr-4, .rtl .px-4 { padding-right: unset !important; padding-left: 1.5rem !important; }
+.rtl .pl-5, .rtl .px-5 { padding-left: unset !important; padding-right: 3rem !important; }
+.rtl .pr-5, .rtl .px-5 { padding-right: unset !important; padding-left: 3rem !important; }
+
+.rtl .float-left { float: right !important; }
+.rtl .float-right { float: left !important; }
+.rtl .text-left { text-align: right !important; }
+.rtl .text-right { text-align: left !important; }
+
+/* Dynamic direction overrides for specific elements */
+.rtl .ms-3 {
+    margin-left: unset !important;
+    margin-right: 1rem !important;
+}
+
+.rtl .popover-content ul {
+    padding-left: unset !important;
+    padding-right: 20px !important;
+}
+
+.rtl .remove-elective-subject {
+    right: auto !important;
+    left: 20px !important;
+}
+
+.rtl .main-panel {
+    margin-left: 0 !important;
+}
+
+/* Mirrored package-type-badge clip-path polygon in RTL */
+.rtl .package-type-badge {
+    left: -10px !important;
+    right: auto !important;
+    clip-path: polygon(50% 0%, 0% 0%, 0% 100%, 100% 100%, 86% 52%, 100% 0%) !important;
+}
+
+/* Sidebar inner categories overrides in RTL */
+.rtl .sub-category {
+    border-left: none !important;
+    border-right: 3px solid #3e4b5b !important;
+    padding: 10px 15px 5px 0 !important;
+}
+.rtl .nav-item.pl-3 .nav-link {
+    padding-left: 0 !important;
+    padding-right: 15px !important;
+}
+.rtl .nav-item.pl-3 .nav-link i.small-icon {
+    margin-right: 0 !important;
+    margin-left: 5px !important;
+}
+
+/* Global Icon Horizontal Mirroring in RTL */
+.rtl .fa-caret-right,
+.rtl .fa-chevron-right,
+.rtl .fa-angle-right,
+.rtl .fa-arrow-right,
+.rtl .fa-long-arrow-right,
+.rtl .fa-arrow-circle-right,
+.rtl .fa-chevron-circle-right {
+    transform: scaleX(-1);
+    display: inline-block;
+}
+.rtl .fa-caret-left,
+.rtl .fa-chevron-left,
+.rtl .fa-angle-left,
+.rtl .fa-arrow-left,
+.rtl .fa-long-arrow-left,
+.rtl .fa-arrow-circle-left,
+.rtl .fa-chevron-circle-left {
+    transform: scaleX(-1);
+    display: inline-block;
+}
