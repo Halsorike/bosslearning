@@ -1,0 +1,677 @@
+/*
+ * Boss Learning - Design System
+ * Jordan RTL School Management Platform
+ * Primary: #1A5E35 | Secondary: #2B904F | Accent: #81C341
+ * Font: Noto Sans Arabic (Arabic + Latin)
+ */
+
+/* ─────────────────────────────────────────────
+   1. CSS CUSTOM PROPERTIES (DESIGN TOKENS)
+   ───────────────────────────────────────────── */
+:root {
+    --bl-primary:          #1A5E35;
+    --bl-primary-dark:     #0C2B18;
+    --bl-primary-hover:    #0C2B18;
+    --bl-secondary:        #2B904F;
+    --bl-accent:           #81C341;
+    --bl-surface:          #F4F9F5;
+    --bl-surface-alt:      #E8F4EC;
+    --bl-surface-border:   #D1E8D9;
+    --bl-text-main:        #0D1F14;
+    --bl-text-muted:       #3D5C47;
+    --bl-text-placeholder: #6B9478;
+    --bl-white:            #FFFFFF;
+    --bl-shadow-card:      0 2px 8px rgba(26, 94, 53, 0.08);
+    --bl-shadow-hover:     0 8px 24px rgba(26, 94, 53, 0.15);
+    --bl-radius:           8px;
+    --bl-radius-lg:        12px;
+    --bl-radius-xl:        16px;
+    --bl-sidebar-width:    260px;
+    --bl-navbar-height:    60px;
+    --bl-transition:       all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ─────────────────────────────────────────────
+   2. TYPOGRAPHY — Noto Sans Arabic
+   ───────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap');
+
+body,
+html {
+    font-family: 'Noto Sans Arabic', 'Tajawal', Arial, sans-serif !important;
+}
+
+/* ─────────────────────────────────────────────
+   3. SIDEBAR — Boss Learning Dark Green
+   ───────────────────────────────────────────── */
+.sidebar {
+    background: var(--bl-primary-dark) !important;
+    border-right: none !important;
+    box-shadow: 2px 0 16px rgba(12, 43, 24, 0.3) !important;
+}
+
+/* Sidebar Brand / Logo area */
+.sidebar .sidebar-brand-wrapper,
+.sidebar .text-center.navbar-brand-wrapper {
+    background: var(--bl-primary-dark) !important;
+    border-bottom: 1px solid rgba(255,255,255,0.08) !important;
+    padding: 1rem !important;
+}
+
+/* Nav category labels */
+.sidebar .nav .sub-category {
+    color: var(--bl-accent) !important;
+    font-size: 0.7rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.08em !important;
+    text-transform: uppercase !important;
+    padding: 16px 20px 6px !important;
+    border-left: none !important;
+    border-right: none !important;
+    opacity: 0.8;
+}
+
+/* Nav links — default */
+.sidebar .nav .nav-item .nav-link {
+    color: rgba(255, 255, 255, 0.65) !important;
+    border-radius: var(--bl-radius) !important;
+    margin: 2px 12px !important;
+    padding: 10px 14px !important;
+    transition: var(--bl-transition) !important;
+    font-size: 0.875rem !important;
+    font-weight: 500 !important;
+}
+
+.sidebar .nav .nav-item .nav-link:hover {
+    background: rgba(43, 144, 79, 0.2) !important;
+    color: #fff !important;
+}
+
+/* Nav links — active */
+.sidebar .nav .nav-item.active > .nav-link,
+.sidebar .nav .nav-item .nav-link.active {
+    background: var(--bl-primary) !important;
+    color: #fff !important;
+    box-shadow: 0 4px 12px rgba(26, 94, 53, 0.4) !important;
+}
+
+/* Active indicator bar — RTL-aware */
+html[dir="ltr"] .sidebar .nav .nav-item.active > .nav-link {
+    border-left: 3px solid var(--bl-accent) !important;
+}
+html[dir="rtl"] .sidebar .nav .nav-item.active > .nav-link {
+    border-right: 3px solid var(--bl-accent) !important;
+    border-left: none !important;
+}
+
+/* Nav icons */
+.sidebar .nav .nav-item .nav-link i.menu-icon {
+    color: var(--bl-accent) !important;
+    font-size: 1rem !important;
+}
+
+.sidebar .nav .nav-item.active .nav-link i.menu-icon,
+.sidebar .nav .nav-item .nav-link.active i.menu-icon {
+    color: #fff !important;
+}
+
+/* Sidebar logout / bottom section */
+.sidebar .sidebar-footer,
+.sidebar .sidebar-footer-items {
+    border-top: 1px solid rgba(255,255,255,0.08) !important;
+}
+
+/* ─────────────────────────────────────────────
+   4. TOP NAVBAR
+   ───────────────────────────────────────────── */
+.navbar.default-layout-navbar {
+    background: var(--bl-white) !important;
+    border-bottom: 1px solid var(--bl-surface-border) !important;
+    box-shadow: 0 1px 8px rgba(26, 94, 53, 0.06) !important;
+    height: var(--bl-navbar-height) !important;
+}
+
+.navbar .navbar-brand-wrapper {
+    background: var(--bl-primary-dark) !important;
+    width: var(--bl-sidebar-width) !important;
+    border-bottom: none !important;
+}
+
+.navbar .navbar-menu-wrapper {
+    background: var(--bl-white) !important;
+    border-bottom: 1px solid var(--bl-surface-border) !important;
+}
+
+/* Cache-clear button in navbar */
+.navbar .btn-inverse-info {
+    background: transparent !important;
+    color: var(--bl-primary) !important;
+    border: 1px solid var(--bl-surface-border) !important;
+    border-radius: var(--bl-radius) !important;
+    font-size: 0.75rem !important;
+    padding: 4px 10px !important;
+    transition: var(--bl-transition) !important;
+}
+
+.navbar .btn-inverse-info:hover {
+    background: var(--bl-surface-alt) !important;
+}
+
+/* ─────────────────────────────────────────────
+   5. DASHBOARD STAT CARDS
+   ───────────────────────────────────────────── */
+.bl-stat-card {
+    background: linear-gradient(135deg, var(--bl-primary) 0%, var(--bl-secondary) 100%) !important;
+    border-radius: var(--bl-radius-lg) !important;
+    border: none !important;
+    box-shadow: var(--bl-shadow-card) !important;
+    color: #fff !important;
+    padding: 1.5rem !important;
+    position: relative;
+    overflow: hidden;
+    transition: var(--bl-transition) !important;
+}
+
+.bl-stat-card:hover {
+    box-shadow: var(--bl-shadow-hover) !important;
+    transform: translateY(-2px);
+}
+
+.bl-stat-card::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 100px;
+    height: 100px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 50%;
+}
+
+.bl-stat-card .stat-icon {
+    background: rgba(255,255,255,0.15) !important;
+    border-radius: var(--bl-radius) !important;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem !important;
+    color: #fff !important;
+    backdrop-filter: blur(4px);
+}
+
+.bl-stat-card .stat-number {
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    line-height: 1.1 !important;
+    color: #fff !important;
+    margin-top: 0.75rem !important;
+}
+
+.bl-stat-card .stat-label {
+    font-size: 0.8rem !important;
+    color: rgba(255,255,255,0.75) !important;
+    font-weight: 500 !important;
+}
+
+.bl-stat-card .stat-change {
+    font-size: 0.75rem !important;
+    color: var(--bl-accent) !important;
+    font-weight: 600 !important;
+    margin-top: 0.5rem !important;
+}
+
+/* ─────────────────────────────────────────────
+   6. CARDS (General)
+   ───────────────────────────────────────────── */
+.card {
+    border-radius: var(--bl-radius-lg) !important;
+    border: 1px solid var(--bl-surface-border) !important;
+    box-shadow: var(--bl-shadow-card) !important;
+    background: var(--bl-white) !important;
+    transition: var(--bl-transition) !important;
+}
+
+.card:hover {
+    box-shadow: var(--bl-shadow-hover) !important;
+}
+
+.card .card-header {
+    background: var(--bl-surface) !important;
+    border-bottom: 1px solid var(--bl-surface-border) !important;
+    border-radius: var(--bl-radius-lg) var(--bl-radius-lg) 0 0 !important;
+    padding: 1rem 1.25rem !important;
+    font-weight: 600 !important;
+    color: var(--bl-text-main) !important;
+}
+
+/* ─────────────────────────────────────────────
+   7. BUTTONS
+   ───────────────────────────────────────────── */
+.btn-theme,
+.btn-primary {
+    background: var(--bl-primary) !important;
+    border-color: var(--bl-primary) !important;
+    color: #fff !important;
+    border-radius: var(--bl-radius) !important;
+    font-weight: 600 !important;
+    padding: 0.6rem 1.5rem !important;
+    transition: var(--bl-transition) !important;
+    box-shadow: 0 2px 8px rgba(26, 94, 53, 0.25) !important;
+}
+
+.btn-theme:hover,
+.btn-primary:hover {
+    background: var(--bl-primary-hover) !important;
+    border-color: var(--bl-primary-hover) !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 14px rgba(26, 94, 53, 0.35) !important;
+}
+
+.btn-outline-primary {
+    border: 1.5px solid var(--bl-primary) !important;
+    color: var(--bl-primary) !important;
+    background: transparent !important;
+    border-radius: var(--bl-radius) !important;
+    font-weight: 600 !important;
+    transition: var(--bl-transition) !important;
+}
+
+.btn-outline-primary:hover {
+    background: var(--bl-primary) !important;
+    color: #fff !important;
+}
+
+/* Accent / secondary button */
+.btn-success {
+    background: var(--bl-secondary) !important;
+    border-color: var(--bl-secondary) !important;
+    border-radius: var(--bl-radius) !important;
+}
+
+/* ─────────────────────────────────────────────
+   8. FORM INPUTS
+   ───────────────────────────────────────────── */
+.form-control,
+.form-select {
+    border: 1.5px solid var(--bl-surface-border) !important;
+    border-radius: var(--bl-radius) !important;
+    background: var(--bl-white) !important;
+    color: var(--bl-text-main) !important;
+    height: 44px !important;
+    padding: 0.5rem 1rem !important;
+    transition: var(--bl-transition) !important;
+    font-size: 0.9rem !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--bl-primary) !important;
+    box-shadow: 0 0 0 3px rgba(26, 94, 53, 0.12) !important;
+    outline: none !important;
+}
+
+.form-control::placeholder {
+    color: var(--bl-text-placeholder) !important;
+}
+
+label {
+    color: var(--bl-text-muted) !important;
+    font-size: 0.8125rem !important;
+    font-weight: 500 !important;
+    margin-bottom: 0.4rem !important;
+}
+
+/* ─────────────────────────────────────────────
+   9. TABLES
+   ───────────────────────────────────────────── */
+.table thead th {
+    background: var(--bl-surface) !important;
+    color: var(--bl-text-main) !important;
+    font-weight: 600 !important;
+    font-size: 0.8rem !important;
+    border-bottom: 1px solid var(--bl-surface-border) !important;
+    padding: 0.85rem 1rem !important;
+}
+
+.table tbody tr:hover {
+    background: var(--bl-surface-alt) !important;
+}
+
+.table tbody td {
+    color: var(--bl-text-muted) !important;
+    font-size: 0.875rem !important;
+    border-bottom: 1px solid var(--bl-surface-border) !important;
+    padding: 0.75rem 1rem !important;
+    vertical-align: middle !important;
+}
+
+/* ─────────────────────────────────────────────
+   10. BADGES / STATUS PILLS
+   ───────────────────────────────────────────── */
+.badge-bl-success { background: #E8F4EC !important; color: var(--bl-secondary) !important; border-radius: 50px !important; font-size: 0.7rem !important; font-weight: 600 !important; padding: 4px 10px !important; }
+.badge-bl-warning { background: #FFF8E8 !important; color: #E8A917 !important; border-radius: 50px !important; font-size: 0.7rem !important; font-weight: 600 !important; padding: 4px 10px !important; }
+.badge-bl-danger  { background: #FFF0F0 !important; color: #D63031 !important; border-radius: 50px !important; font-size: 0.7rem !important; font-weight: 600 !important; padding: 4px 10px !important; }
+.badge-bl-info    { background: #EEF6FF !important; color: #0984E3 !important; border-radius: 50px !important; font-size: 0.7rem !important; font-weight: 600 !important; padding: 4px 10px !important; }
+
+/* Override default badge-* that might use old colors */
+.badge-success { background: #E8F4EC !important; color: var(--bl-secondary) !important; }
+.badge-warning { background: #FFF8E8 !important; color: #E8A917 !important; }
+.badge-danger  { background: #FFF0F0 !important; color: #D63031 !important; }
+
+/* ─────────────────────────────────────────────
+   11. MODALS
+   ───────────────────────────────────────────── */
+.modal .modal-content {
+    border-radius: var(--bl-radius-xl) !important;
+    border: none !important;
+    box-shadow: 0 24px 48px rgba(26, 94, 53, 0.2) !important;
+}
+
+.modal .modal-header {
+    background: var(--bl-primary) !important;
+    color: #fff !important;
+    border-radius: var(--bl-radius-xl) var(--bl-radius-xl) 0 0 !important;
+    border-bottom: none !important;
+    padding: 1.25rem 1.5rem !important;
+}
+
+.modal .modal-header .modal-title {
+    font-weight: 600 !important;
+    font-size: 1rem !important;
+    color: #fff !important;
+}
+
+.modal .modal-header .btn-close,
+.modal .modal-header .close {
+    color: rgba(255,255,255,0.8) !important;
+    opacity: 1 !important;
+    filter: brightness(10) !important;
+}
+
+.modal .modal-footer {
+    border-top: 1px solid var(--bl-surface-border) !important;
+    padding: 1rem 1.5rem !important;
+}
+
+/* ─────────────────────────────────────────────
+   12. PAGE BACKGROUND
+   ───────────────────────────────────────────── */
+body,
+.main-panel,
+.content-wrapper {
+    background: var(--bl-surface) !important;
+}
+
+/* Login page: white body, no sidebar background needed */
+body:has(.login-split-wrapper) {
+    background: var(--bl-white) !important;
+    overflow: hidden !important;
+}
+
+/* ─────────────────────────────────────────────
+   13. LOGIN PAGE — SPLIT SCREEN DESIGN
+   ───────────────────────────────────────────── */
+
+/* Override the default login wrapper */
+.login-split-wrapper {
+    min-height: 100vh !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch !important;
+    width: 100% !important;
+}
+
+/* Form panel */
+.login-form-panel {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    width: 50% !important;
+    background: var(--bl-white) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    padding: 3rem 4rem !important;
+    overflow-y: auto !important;
+    box-sizing: border-box !important;
+}
+
+/* Branding panel */
+.login-brand-panel {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    width: 50% !important;
+    background: linear-gradient(145deg, var(--bl-primary-dark) 0%, var(--bl-primary) 100%) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 3rem 2.5rem !important;
+    position: relative !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+}
+
+/* Brand panel decorative blobs */
+.login-brand-panel .blob-1 {
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    width: 320px;
+    height: 320px;
+    background: rgba(129, 195, 65, 0.15);
+    border-radius: 50%;
+    filter: blur(60px);
+    animation: blobDrift 18s infinite ease-in-out;
+}
+
+.login-brand-panel .blob-2 {
+    position: absolute;
+    bottom: -80px;
+    left: -80px;
+    width: 280px;
+    height: 280px;
+    background: rgba(43, 144, 79, 0.2);
+    border-radius: 50%;
+    filter: blur(60px);
+    animation: blobDrift 22s infinite ease-in-out reverse;
+}
+
+@keyframes blobDrift {
+    0%   { transform: translate(0, 0) scale(1); }
+    50%  { transform: translate(-20px, 15px) scale(1.06); }
+    100% { transform: translate(0, 0) scale(1); }
+}
+
+/* Islamic geometric pattern overlay */
+.login-brand-panel .pattern-overlay {
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cg fill='none' stroke='rgba(255,255,255,0.06)' stroke-width='1'%3E%3Cpolygon points='30,2 57,17 57,43 30,58 3,43 3,17'/%3E%3Cpolygon points='30,10 50,22 50,38 30,50 10,38 10,22'/%3E%3Cpolygon points='30,18 43,26 43,34 30,42 17,34 17,26'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 60px 60px;
+    opacity: 0.6;
+}
+
+/* School emblem */
+.login-brand-panel .school-emblem {
+    width: 90px;
+    height: 90px;
+    background: rgba(255,255,255,0.12);
+    border: 2px solid rgba(255,255,255,0.25);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 2;
+}
+
+.login-brand-panel .brand-headline {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.login-brand-panel .brand-sub {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.7);
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.login-brand-panel .brand-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.login-brand-panel .brand-features li {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: rgba(255,255,255,0.85);
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.login-brand-panel .brand-features li::before {
+    content: '✓';
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+    background: var(--bl-accent);
+    color: var(--bl-primary-dark);
+    border-radius: 50%;
+    font-size: 0.7rem;
+    font-weight: 800;
+}
+
+/* Login form elements */
+.login-form-panel .login-logo {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--bl-primary);
+    text-align: center;
+    margin-bottom: 2.5rem;
+    letter-spacing: -0.01em;
+}
+
+.login-form-panel h1.login-welcome {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--bl-text-main);
+    margin-bottom: 0.4rem;
+    line-height: 1.2;
+}
+
+.login-form-panel p.login-subtitle {
+    color: var(--bl-text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.login-form-panel .forgot-link {
+    color: var(--bl-secondary) !important;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none !important;
+}
+
+.login-form-panel .forgot-link:hover {
+    color: var(--bl-primary) !important;
+    text-decoration: underline !important;
+}
+
+/* Login page full-width submit button */
+.login-form-panel .btn-login {
+    width: 100%;
+    height: 48px;
+    background: var(--bl-primary) !important;
+    border: none !important;
+    border-radius: var(--bl-radius) !important;
+    color: #fff !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    transition: var(--bl-transition) !important;
+    box-shadow: 0 4px 14px rgba(26, 94, 53, 0.3) !important;
+    cursor: pointer;
+}
+
+.login-form-panel .btn-login:hover {
+    background: var(--bl-primary-hover) !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 6px 20px rgba(26, 94, 53, 0.4) !important;
+}
+
+/* Responsive: stack panels on mobile */
+@media (max-width: 767px) {
+    .login-split-wrapper {
+        flex-direction: column;
+    }
+    .login-form-panel,
+    .login-brand-panel {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 2rem 1.5rem;
+    }
+    .login-brand-panel {
+        min-height: 220px;
+    }
+}
+
+/* ─────────────────────────────────────────────
+   14. DROPDOWN HOVER COLOR (override old blue)
+   ───────────────────────────────────────────── */
+.dropdown .dropdown-menu .dropdown-item:hover,
+.dropdown-item:active {
+    background-color: var(--bl-primary) !important;
+    color: #fff !important;
+}
+
+/* ─────────────────────────────────────────────
+   15. FOCUS RING (Accessibility)
+   ───────────────────────────────────────────── */
+*:focus-visible {
+    outline: 2px solid var(--bl-accent) !important;
+    outline-offset: 2px !important;
+}
+
+/* ─────────────────────────────────────────────
+   16. PAGINATION
+   ───────────────────────────────────────────── */
+.pagination .page-item.active .page-link {
+    background: var(--bl-primary) !important;
+    border-color: var(--bl-primary) !important;
+    color: #fff !important;
+}
+
+.pagination .page-link {
+    color: var(--bl-primary) !important;
+    border-color: var(--bl-surface-border) !important;
+    border-radius: var(--bl-radius) !important;
+}
+
+.pagination .page-link:hover {
+    background: var(--bl-surface-alt) !important;
+    color: var(--bl-primary) !important;
+}

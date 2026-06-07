@@ -378,4 +378,131 @@ input:checked+.feature-list, .feature-list-default {
 .rtl .fa-chevron-circle-left {
     transform: scaleX(-1);
     display: inline-block;
-}
+}
+
+/* ═══════════════════════════════════════════════════
+   BOSS LEARNING — RTL LAYOUT OVERRIDES
+   Applied when <body class="... rtl"> is present
+═══════════════════════════════════════════════════ */
+
+/* --- Noto Sans Arabic for all RTL text --- */
+body.rtl,
+body.rtl * {
+    font-family: 'Noto Sans Arabic', Arial, sans-serif !important;
+}
+
+/* --- Sidebar: anchor to RIGHT in RTL --- */
+@media (min-width: 992px) {
+    body.rtl .sidebar {
+        right: 0 !important;
+        left: auto !important;
+        border-left: none !important;
+        border-right: 1px solid rgba(12, 43, 24, 0.5) !important;
+    }
+
+    body.rtl .main-panel {
+        margin-right: var(--bl-sidebar-width, 260px) !important;
+        margin-left: 0 !important;
+    }
+
+    body.rtl.sidebar-icon-only .main-panel {
+        margin-right: 70px !important;
+        margin-left: 0 !important;
+    }
+
+    body.rtl .navbar.default-layout-navbar .navbar-brand-wrapper {
+        right: 0 !important;
+        left: auto !important;
+        border-left: none !important;
+    }
+
+    /* Sidebar-icon-only: collapse to right */
+    body.rtl.sidebar-icon-only .sidebar {
+        right: 0 !important;
+        left: auto !important;
+    }
+}
+
+/* Active sidebar item: accent border on RIGHT side (RTL) */
+body.rtl .sidebar .nav .nav-item.active > .nav-link,
+body.rtl .sidebar .nav .nav-item .nav-link.active {
+    border-right: 3px solid var(--bl-accent, #81C341) !important;
+    border-left: none !important;
+    border-radius: 8px 0 0 8px !important;
+}
+
+/* LTR: accent border on LEFT */
+body:not(.rtl) .sidebar .nav .nav-item.active > .nav-link,
+body:not(.rtl) .sidebar .nav .nav-item .nav-link.active {
+    border-left: 3px solid var(--bl-accent, #81C341) !important;
+    border-right: none !important;
+    border-radius: 0 8px 8px 0 !important;
+}
+
+/* --- Navbar: menu wrapper RTL padding --- */
+body.rtl .navbar .navbar-menu-wrapper {
+    padding-right: 1rem !important;
+    padding-left: 0.5rem !important;
+}
+
+/* --- Dropdown menus: open to LEFT in RTL --- */
+body.rtl .dropdown-menu {
+    right: 0 !important;
+    left: auto !important;
+}
+
+body.rtl .navbar-dropdown {
+    right: 0 !important;
+    left: auto !important;
+}
+
+/* --- Breadcrumb separator direction --- */
+body.rtl .breadcrumb-item + .breadcrumb-item::before {
+    content: "‹" !important;
+    padding-right: 0.5rem !important;
+    padding-left: 0 !important;
+    float: right !important;
+}
+
+/* --- Modal close button: top-LEFT in RTL --- */
+body.rtl .modal-header .btn-close,
+body.rtl .modal-header .close {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}
+
+/* --- Sub-category labels: right border in RTL --- */
+body.rtl .sub-category {
+    border-right: 3px solid rgba(255,255,255,0.15) !important;
+    border-left: none !important;
+    padding: 10px 15px 5px 0 !important;
+    padding-right: 15px !important;
+}
+
+/* --- Input group: icon positioning for RTL forms --- */
+body.rtl .input-group-append {
+    border-right: 1px solid var(--bl-surface-border, #D1E8D9) !important;
+    border-left: none !important;
+}
+
+/* --- Progress bars: fill right-to-left in RTL --- */
+body.rtl .progress-bar {
+    float: right !important;
+}
+
+/* --- select2 RTL --- */
+body.rtl .select2-container--default .select2-selection--single .select2-selection__arrow {
+    left: 10px !important;
+    right: auto !important;
+}
+
+/* --- Fix sidebar width for RTL --- */
+body.rtl .sidebar {
+    width: 260px !important;
+}
+@media (min-width: 992px) {
+    body.rtl.sidebar-icon-only .sidebar {
+        width: 70px !important;
+    }
+}
+

@@ -24,14 +24,16 @@
     </title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     @if($lang && $lang->is_rtl)
-        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
-        <style>body, * { font-family: 'Tajawal', sans-serif !important; }</style>
+        {{-- Noto Sans Arabic: loaded via boss-learning.css @import, explicit preconnect for performance --}}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     @endif
     @include('layouts.include')
     @yield('css')
 </head>
 
-<body class="sidebar-fixed">
+<body class="sidebar-fixed{{ ($lang && $lang->is_rtl) ? ' rtl' : '' }}">
     <div class="container-scroller">
         {{-- header --}}
         @include('layouts.header')

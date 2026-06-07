@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="{{ asset('/assets/css/style.min.css') }}">
     <link rel="stylesheet" href="{{ asset('/assets/css/custom.css') }}">
 @endif
+{{-- Boss Learning Design System: brand tokens, sidebar, login, typography --}}
+<link rel="stylesheet" href="{{ asset('/assets/css/boss-learning.css') }}">
 
 <link rel="stylesheet" href="{{ asset('/assets/css/comman.css') }}">
 <link rel="stylesheet" href="{{ asset('/assets/css/datepicker.min.css') }}">
@@ -45,6 +47,10 @@
 <style>
     :root {
         --theme-color: <?=$systemSettings['theme_color']??"#1A5E35" ?>;
+        /* Boss Learning tokens aliased for legacy code */
+        --primary-color: <?=$systemSettings['theme_primary_color']??'#1A5E35' ?>;
+        --secondary-color: <?=$systemSettings['theme_secondary_color']??'#2B904F' ?>;
+        --secondary-color1: <?=$systemSettings['theme_secondary_color_1']??'#81C341' ?>;
     }
     /* Custom styles for sidebar sub-categories */
     .sub-category {
