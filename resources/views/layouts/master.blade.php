@@ -23,6 +23,10 @@
         {{ $systemSettings['system_name'] ?? 'Boss Learning' }}
     </title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    @if($lang && $lang->is_rtl)
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <style>body, * { font-family: 'Tajawal', sans-serif !important; }</style>
+    @endif
     @include('layouts.include')
     @yield('css')
 </head>

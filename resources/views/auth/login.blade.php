@@ -23,6 +23,11 @@
 
     <title>{{ __('login') }} || {{ config('app.name') }}</title>
 
+    @if($lang && $lang->is_rtl)
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <style>body, * { font-family: 'Tajawal', sans-serif !important; }</style>
+    @endif
+
     @include('layouts.include')
 
     <style>
@@ -98,8 +103,7 @@
                                         {{ \Session::get('success') }}.
                                     </div>
                                     <div class="alert alert-success text-center mt-2" role="alert">
-                                        Please ensure you use your registered email for login, and your contact number as
-                                        the password.
+                                        {{ __('please_ensure_login') }}
                                     </div>
                                 @endif
                                 {{-- emailError --}}

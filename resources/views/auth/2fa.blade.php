@@ -21,6 +21,11 @@
 
     <title>{{ __('verify_code') }} || {{ config('app.name') }}</title>
 
+    @if($lang && $lang->is_rtl)
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <style>body, * { font-family: 'Tajawal', sans-serif !important; }</style>
+    @endif
+
     @include('layouts.include')
 
     <style>
@@ -71,7 +76,7 @@
                                         {{ \Session::get('success') }}.
                                     </div>
                                     <div class="alert alert-success text-center mt-2" role="alert">
-                                        Please ensure you use your registered email for login, and your contact number as the password.
+                                        {{ __('please_ensure_login') }}
                                     </div>
                                 @endif
                                 {{-- emailError --}}
@@ -88,7 +93,7 @@
                             </div>
 
                             <div class="text-center">
-                                <h3>2 Factor Authentication</h3>
+                                <h3>{{ __('two_factor_authentication') }}</h3>
                             </div>
                             <form action="{{ route('auth.2fa.code') }}" id="frm2FA" method="POST" class="pt-3">
                                 @csrf
@@ -104,7 +109,7 @@
                             </form>
 
                             <div class="my-3">
-                                <strong>Note:</strong> Please check your email for a verification code. If you still cannot receive the code, try again login with your email and password.
+                                <strong>{{ __('note') }}:</strong> {{ __('two_factor_note') }}
                             </div>
                         </div>
                     </div>
@@ -125,7 +130,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    </script>
 </body>
 
 @if (Session::has('error'))

@@ -67,6 +67,11 @@
 
     <title>{{ __('Reset Password') }} || {{ config('app.name') }}</title>
 
+    @if($lang && $lang->is_rtl)
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <style>body, * { font-family: 'Tajawal', sans-serif !important; }</style>
+    @endif
+
     @include('layouts.include')
 
 </head>
