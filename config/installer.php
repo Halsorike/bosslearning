@@ -13,54 +13,54 @@ return [
         'php'       => [
             'name'    => 'PHP Version',
             'version' => '>= 8.1.0',
-            'check'   => fn() => version_compare(PHP_VERSION, '8', '>')
+            'check'   => [\dacoto\LaravelWizardInstaller\Controllers\InstallServerController::class, 'checkPhp']
         ],
         'pdo'       => [
             'name'  => 'PDO',
-            'check' => fn() => extension_loaded('pdo_mysql')
+            'check' => [\dacoto\LaravelWizardInstaller\Controllers\InstallServerController::class, 'checkPdo']
         ],
         'mbstring'  => [
             'name'  => 'Mbstring extension',
-            'check' => fn() => extension_loaded('mbstring')
+            'check' => [\dacoto\LaravelWizardInstaller\Controllers\InstallServerController::class, 'checkMbstring']
         ],
         'fileinfo'  => [
             'name'  => 'Fileinfo extension',
-            'check' => fn() => extension_loaded('fileinfo')
+            'check' => [\dacoto\LaravelWizardInstaller\Controllers\InstallServerController::class, 'checkFileinfo']
         ],
         'openssl'   => [
             'name'  => 'OpenSSL extension',
-            'check' => fn() => extension_loaded('openssl')
+            'check' => [\dacoto\LaravelWizardInstaller\Controllers\InstallServerController::class, 'checkOpenssl']
         ],
         'tokenizer' => [
             'name'  => 'Tokenizer extension',
-            'check' => fn() => extension_loaded('tokenizer')
+            'check' => [\dacoto\LaravelWizardInstaller\Controllers\InstallServerController::class, 'checkTokenizer']
         ],
         'json'      => [
             'name'  => 'Json extension',
-            'check' => fn() => extension_loaded('json')
+            'check' => [\dacoto\LaravelWizardInstaller\Controllers\InstallServerController::class, 'checkJson']
         ],
         'curl'      => [
             'name'  => 'Curl extension',
-            'check' => fn() => extension_loaded('curl')
+            'check' => [\dacoto\LaravelWizardInstaller\Controllers\InstallServerController::class, 'checkCurl']
         ],
         'zip'       => [
             'name'  => 'Zip extension',
-            'check' => fn() => extension_loaded('zip')
+            'check' => [\dacoto\LaravelWizardInstaller\Controllers\InstallServerController::class, 'checkZip']
         ]
     ],
 
     'folders' => [
         'storage.framework' => [
             'name'  => base_path() . DIRECTORY_SEPARATOR . 'storage' . DIRECTORY_SEPARATOR . 'framework',
-            'check' => fn() => (int)File::chmod(base_path() . DIRECTORY_SEPARATOR . 'storage' . DIRECTORY_SEPARATOR . 'framework') >= 755
+            'check' => [\dacoto\LaravelWizardInstaller\Controllers\InstallFolderController::class, 'checkFramework']
         ],
         'storage.logs'      => [
             'name'  => base_path() . DIRECTORY_SEPARATOR . 'storage' . DIRECTORY_SEPARATOR . 'logs',
-            'check' => fn() => (int)File::chmod(base_path() . DIRECTORY_SEPARATOR . 'storage' . DIRECTORY_SEPARATOR . 'logs') >= 755
+            'check' => [\dacoto\LaravelWizardInstaller\Controllers\InstallFolderController::class, 'checkLogs']
         ],
         'storage.cache'     => [
             'name'  => base_path() . DIRECTORY_SEPARATOR . 'bootstrap' . DIRECTORY_SEPARATOR . 'cache',
-            'check' => fn() => (int)File::chmod(base_path() . DIRECTORY_SEPARATOR . 'bootstrap/cache') >= 755
+            'check' => [\dacoto\LaravelWizardInstaller\Controllers\InstallFolderController::class, 'checkCache']
         ],
     ],
 
