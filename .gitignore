@@ -34,3 +34,32 @@ Homestead.json
 
 .cursor/rules/my-laravel-rules.mdc
 Boss_School_Final.zip
+
+# Security - Debug artifacts
+/storage/debugbar/
+/storage/logs/*.log
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Environment secrets (already present but verify)
+.env
+
+# Compiled assets that should not be tracked
+/node_modules/
+/vendor/
+
+# Flutter build artifacts (if tracked by mistake)
+**/build/
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/pubspec.lock
+
+# Large archives
+*.zip
+*.tar.gz
+*.rar
