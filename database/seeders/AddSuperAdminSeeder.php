@@ -23,7 +23,7 @@ class AddSuperAdminSeeder extends Seeder {
             'first_name' => 'super',
             'last_name'  => 'admin',
             'email'      => 'superadmin@gmail.com',
-            'password'   => Hash::make('superadmin'),
+            'password'   => Hash::make(env('SUPER_ADMIN_PASSWORD', 'superadmin')),
             'gender'     => 'male',
             'image'      => 'logo.svg',
             'mobile'     => "",
