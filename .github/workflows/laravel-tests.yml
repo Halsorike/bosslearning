@@ -10,14 +10,6 @@ jobs:
   laravel-tests:
     runs-on: ubuntu-latest
 
-    env:
-      DB_CONNECTION: mysql
-      DB_HOST: 127.0.0.1
-      DB_PORT: 3306
-      DB_DATABASE: testing_db
-      DB_USERNAME: root
-      DB_PASSWORD: ""
-
     services:
       mysql:
         image: mysql:8.0
@@ -29,32 +21,46 @@ jobs:
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.2'
-          extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, sqlite, pdo_sqlite, bcmath, soap, intl, gd, exif
-
-      - name: Create storage directories
-        run: |
-          mkdir -p storage/framework/{cache/data,sessions,views} storage/logs storage/app/public bootstrap/cache
-          chmod -R 0777 storage bootstrap/cache || true
+          php-version: '8.3'
+          extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, pdo_mysql, sqlite, pdo_sqlite, bcmath, soap, intl, gd, exif, iconv
 
       - name: Copy .env
         run: php -r "file_exists('.env') || copy('.env.example', '.env');"
 
-      - name: Install Dependencies
-        run: composer install -q --no-ansi --no-interaction --no-progress --prefer-dist
+      - name: Create Storage Directories
+        run: |
+          mkdir -p storage/framework/cache/data
+          mkdir -p storage/framework/sessions
+          mkdir -p storage/framework/views
+          mkdir -p storage/framework/testing
+          mkdir -p storage/logs
+          mkdir -p bootstrap/cache
 
-      - name: Generate key
+      - name: Install Dependencies
+        run: composer install --ignore-platform-reqs --no-ansi --no-interaction --no-progress --prefer-dist
+
+      - name: Generate Application Key
         run: php artisan key:generate --ansi --force
 
-      - name: Run migrations
+      - name: Set Directory Permissions
+        run: chmod -R 775 storage bootstrap/cache
+
+      - name: Run Migrations
+        env:
+          DB_CONNECTION: mysql
+          DB_HOST: 127.0.0.1
+          DB_PORT: 3306
+          DB_DATABASE: testing_db
+          DB_USERNAME: root
+          DB_PASSWORD: ""
         run: php artisan migrate --force
 
-      - name: Execute tests
+      - name: Execute Tests (PHPUnit)
         env:
           DB_CONNECTION: mysql
           DB_HOST: 127.0.0.1
