@@ -30,11 +30,11 @@
 
     <style>
         :root {
-        --primary-color: {{ $systemSettings['theme_primary_color'] ?? '#56cc99' }};
-        --secondary-color: {{ $systemSettings['theme_secondary_color'] ?? '#215679' }};
-        --secondary-color1: {{ $systemSettings['theme_secondary_color_1'] ?? '#38a3a5' }};
-        --primary-background-color: {{ $systemSettings['theme_primary_background_color'] ?? '#f2f5f7' }};
-        --text--secondary-color: {{ $systemSettings['theme_text_secondary_color'] ?? '#5c788c' }};
+        --primary-color: {{ $systemSettings['theme_primary_color'] ?? '#1A5E35' }};
+        --secondary-color: {{ $systemSettings['theme_secondary_color'] ?? '#2B904F' }};
+        --secondary-color1: {{ $systemSettings['theme_secondary_color_1'] ?? '#81C341' }};
+        --primary-background-color: {{ $systemSettings['theme_primary_background_color'] ?? '#F4F9F5' }};
+        --text--secondary-color: {{ $systemSettings['theme_text_secondary_color'] ?? '#121E15' }};
         
     }
     .modal .modal-dialog {

@@ -31,17 +31,17 @@
 
 <style>
     :root {
-    --primary-color: {{ $schoolSettings['primary_color'] ?? '#22577a' }};
-    --primary-hover-color: {{ $schoolSettings['primary_hover_color'] ?? '#143449' }};
-    --secondary-color1: {{ $schoolSettings['primary_color'] ?? '#22577a' }};
-    --secondary-color2: {{ $schoolSettings['secondary_color'] ?? '#57cc99' }};
+    --primary-color: {{ $schoolSettings['primary_color'] ?? '#1A5E35' }};
+    --primary-hover-color: {{ $schoolSettings['primary_hover_color'] ?? '#0C2B18' }};
+    --secondary-color1: {{ $schoolSettings['primary_color'] ?? '#1A5E35' }};
+    --secondary-color2: {{ $schoolSettings['secondary_color'] ?? '#2B904F' }};
     
-    --secondary-color3: #80ed99;
-    --text--primary-color: #38a3a51f;
+    --secondary-color3: #A3E36B;
+    --text--primary-color: #81C3411f;
     
     --text--secondary-color: {{ $schoolSettings['text_secondary_color'] ?? '#2d2c2fb5' }};
     --text-white-color: #fff;
-    --primary-background-color: {{ $schoolSettings['primary_background_color'] ?? '#f2f5f7' }};
+    --primary-background-color: {{ $schoolSettings['primary_background_color'] ?? '#F4F9F5' }};
 }
 
 </style>

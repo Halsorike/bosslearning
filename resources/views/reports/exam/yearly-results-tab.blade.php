@@ -141,7 +141,7 @@
     }
     
     .border-primary {
-        border-left: 4px solid #007bff !important;
+        border-left: 4px solid #1A5E35 !important;
     }
     
     .border-success {
@@ -167,7 +167,7 @@
     }
 
     .rank-overall {
-        background-color: #007bff;
+        background-color: #1A5E35;
         color: white;
     }
 

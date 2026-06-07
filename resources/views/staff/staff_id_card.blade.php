@@ -57,7 +57,7 @@
         }
         
         .footer {
-            background-color: {{ $settings['staff_footer_color'] ?? '#56cc99' }};
+            background-color: {{ $settings['staff_footer_color'] ?? '#1A5E35' }};
             color: {{ $settings['staff_header_footer_text_color'] ?? 'black' }};
             position: fixed;
             width: 100%;

@@ -7,8 +7,8 @@
 @section('content')
     <style>
         :root {
-            --primary-color: {{ $settings['theme_primary_color'] ?? '#56cc99' }};
-            --secondary-color: {{ $settings['theme_secondary_color'] ?? '#215679' }};
+            --primary-color: {{ $settings['theme_primary_color'] ?? '#1A5E35' }};
+            --secondary-color: {{ $settings['theme_secondary_color'] ?? '#2B904F' }};
 
         }
     </style>

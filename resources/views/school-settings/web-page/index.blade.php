@@ -26,17 +26,17 @@
                                 <div class="row">
                                     <div class="form-group col-sm-12 col-md-4">
                                         <label for="primary_color">{{ __('primary_color') }} <span class="text-danger">*</span></label>
-                                        <input name="primary_color" id="primary_color" value="{{ $settings['primary_color'] ?? '#22577a' }}" type="text" required placeholder="{{ __('color') }}" class="color-picker"/>
+                                        <input name="primary_color" id="primary_color" value="{{ $settings['primary_color'] ?? '#1A5E35' }}" type="text" required placeholder="{{ __('color') }}" class="color-picker"/>
                                     </div>
 
                                     <div class="form-group col-sm-12 col-md-4">
                                         <label for="secondary_color">{{ __('secondary_color') }} <span class="text-danger">*</span></label>
-                                        <input name="secondary_color" id="secondary_color" value="{{ $settings['secondary_color'] ?? '#38a3a5' }}" type="text" required placeholder="{{ __('color') }}" class="color-picker"/>
+                                        <input name="secondary_color" id="secondary_color" value="{{ $settings['secondary_color'] ?? '#81C341' }}" type="text" required placeholder="{{ __('color') }}" class="color-picker"/>
                                     </div>
 
                                     <div class="form-group col-sm-12 col-md-4">
                                         <label for="primary_background_color">{{ __('primary_background_color') }} <span class="text-danger">*</span></label>
-                                        <input name="primary_background_color" id="primary_background_color" value="{{ $settings['primary_background_color'] ?? '#f2f5f7' }}" type="text" required placeholder="{{ __('color') }}" class="color-picker"/>
+                                        <input name="primary_background_color" id="primary_background_color" value="{{ $settings['primary_background_color'] ?? '#F4F9F5' }}" type="text" required placeholder="{{ __('color') }}" class="color-picker"/>
                                     </div>
 
                                     <div class="form-group col-sm-12 col-md-4">
@@ -46,7 +46,7 @@
 
                                     <div class="form-group col-sm-12 col-md-4">
                                         <label for="primary_hover_color">{{ __('primary_hover_color') }} <span class="text-danger">*</span></label>
-                                        <input name="primary_hover_color" id="primary_hover_color" value="{{ $settings['primary_hover_color'] ?? '#143449' }}" type="text" required placeholder="{{ __('color') }}" class="color-picker"/>
+                                        <input name="primary_hover_color" id="primary_hover_color" value="{{ $settings['primary_hover_color'] ?? '#0C2B18' }}" type="text" required placeholder="{{ __('color') }}" class="color-picker"/>
                                     </div>
 
                                 </div>

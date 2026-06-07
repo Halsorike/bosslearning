@@ -99,16 +99,16 @@
         }
 
         :root {
-            --primary: {{ $settings['theme_color'] ?? '#22577a' }};
-            --secondary: {{ $settings['secondary_color'] ?? '#38a3a5' }};
-            --accent: {{ $settings['primary_color'] ?? '#22577a' }};
-            --light: {{ $settings['primary_background_color'] ?? '#f2f5f7' }};
+            --primary: {{ $settings['theme_color'] ?? '#1A5E35' }};
+            --secondary: {{ $settings['secondary_color'] ?? '#2B904F' }};
+            --accent: {{ $settings['primary_color'] ?? '#1A5E35' }};
+            --light: {{ $settings['primary_background_color'] ?? '#F4F9F5' }};
             --dark: {{ $settings['text_secondary_color'] ?? '#2d2c2fb5' }};
             --success: #4CAF50;
             --info: #2196F3;
             --warning: #FF9800;
             --danger: #f72585;
-            --hover: {{ $settings['primary_hover_color'] ?? '#143449' }};
+            --hover: {{ $settings['primary_hover_color'] ?? '#0C2B18' }};
         }
 
         body {

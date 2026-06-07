@@ -6,15 +6,15 @@
 }
 
 :root {
-  --primary-color: #22577a;
-  --primary-hover-color: #143449;
-  --secondary-color1: #38a3a5;
-  --secondary-color2: #57cc99;
-  --secondary-color3: #80ed99;
-  --text--primary-color: #38a3a51f;
+  --primary-color: #1A5E35;
+  --primary-hover-color: #0C2B18;
+  --secondary-color1: #81C341;
+  --secondary-color2: #2B904F;
+  --secondary-color3: #A3E36B;
+  --text--primary-color: #81C3411f;
   --text--secondary-color: #2d2c2fb5;
   --text-white-color: #fff;
-  --primary-background-color: #f2f5f7;
+  --primary-background-color: #F4F9F5;
 }
 
 body {
@@ -1230,7 +1230,7 @@ footer .infoDivWrapper .textDiv span:last-child {
 }
 
 .breadcrumb .contentWrapper .home {
-  color: #22577A;
+  color: var(--primary-color);
   font-size: 18px;
   font-weight: 500;
 }
@@ -1427,7 +1427,7 @@ footer .infoDivWrapper .textDiv span:last-child {
 }
 
 .contactUs .headlines span:last-child {
-  color: #22577A;
+  color: var(--primary-color);
   font-size: 28px;
   font-weight: 700;
 }

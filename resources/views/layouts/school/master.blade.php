@@ -35,7 +35,7 @@
     @include('layouts.school.include')
     @yield('css')
 </head>
-<body style="background-color: #F2F5F7">
+<body style="background-color: #F4F9F5">
     {{-- header --}}
     @include('layouts.school.header')
     <div class="main">

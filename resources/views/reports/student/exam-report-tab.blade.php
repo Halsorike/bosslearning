@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Create card header with exam name and type badge
         const cardHeader = document.createElement('div');
         cardHeader.className = 'card-header d-flex justify-content-between align-items-center';
-        cardHeader.style.backgroundColor = isOnline ? 'rgba(0, 123, 255, 0.1)' : 'rgba(40, 167, 69, 0.1)';
+        cardHeader.style.backgroundColor = isOnline ? 'rgba(26, 94, 53, 0.1)' : 'rgba(40, 167, 69, 0.1)';
         
         // Add exam name on left and type badge + PDF button on right if PDF URL exists
         let headerTitle = `<h5 class="mb-0">${exam.name || exam.exam_title || '{{ __("Exam") }}'}</h5>`;
@@ -435,7 +435,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     .badge-primary {
-        background-color: #007bff;
+        background-color: #1A5E35;
     }
     
     /* New badge styles for subject types */
@@ -477,7 +477,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     .border-primary {
-        border-color: #007bff !important;
+        border-color: #1A5E35 !important;
     }
     
     .border-success {

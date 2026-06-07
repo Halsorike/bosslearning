@@ -44,7 +44,7 @@
 <script src="{{url('/js/lang')}}"></script>
 <style>
     :root {
-        --theme-color: <?=$systemSettings['theme_color']??"#22577A" ?>;
+        --theme-color: <?=$systemSettings['theme_color']??"#1A5E35" ?>;
     }
     /* Custom styles for sidebar sub-categories */
     .sub-category {
